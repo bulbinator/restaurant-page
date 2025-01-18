@@ -1,4 +1,22 @@
-import {greeting} from "./greeting.js"
 import "./styles.css"
+import { tabMenu } from "./menu"
 
-console.log(greeting)
+
+const nav = document.querySelector('nav')
+const content = document.querySelector('#content')
+nav.addEventListener("click", function(e)
+{
+    content.textContent = ""
+    if (e.target.textContent === "Home")
+    {
+
+    }
+    else if (e.target.textContent === "Menu")
+    {
+        tabMenu()
+    }
+    else if (e.target.textContent === "Contact")
+    {
+
+    }
+})
